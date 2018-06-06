@@ -1,0 +1,10 @@
+<h1>Add sentences to NRIpsum</h1>
+<div>
+  <%= form_for(@sentence) do |f| %>
+
+    <%= f.label :content, "Sentence" %>
+    <%= f.text_field :content %>
+
+    <%= f.submit "Add" %>
+  <% end %>
+</div>

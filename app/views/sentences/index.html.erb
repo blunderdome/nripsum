@@ -1,0 +1,10 @@
+<h1>NRIpsum</h1>
+<div>
+  <ul>
+  <% @sentences.each do |sentence| %>
+  <li><%= sentence.content %></li>
+  <% end %>
+  </ul>
+</div>
+
+<%= link_to "Add Ipsum", new_sentence_url %>
