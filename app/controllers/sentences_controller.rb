@@ -18,6 +18,14 @@ class SentencesController < ApplicationController
     @sentences = Sentence.all
   end
 
+  def destroy
+    Sentence.destroy(params[:id])
+    flash[:info] = "Sentence Deleted!"
+    redirect_to :back
+    rescue ActiveRecord::RecordNotFound
+      redirect_to '/404.html'
+  end
+
   private
 
     def sentence_params

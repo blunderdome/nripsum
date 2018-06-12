@@ -3,6 +3,7 @@
   <ul>
   <% @sentences.each do |sentence| %>
   <li><%= sentence.content %></li>
+  <%= link_to "Delete", sentence, method: :delete %>
   <% end %>
   </ul>
 </div>
