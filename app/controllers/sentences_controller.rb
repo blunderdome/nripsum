@@ -1,6 +1,7 @@
 class SentencesController < ApplicationController
   def new
     @sentence = Sentence.new
+    @index = Sentence.all
   end
 
   def create
@@ -12,10 +13,6 @@ class SentencesController < ApplicationController
       flash[:info] = "Didn't create sentence"
       redirect_to new_sentence_url
     end
-  end
-
-  def index
-    @sentences = Sentence.all
   end
 
   def destroy

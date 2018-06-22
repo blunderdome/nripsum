@@ -11,3 +11,18 @@
     <%= f.submit "Add" %>
   <% end %>
 </div>
+
+<h1>NRIpsum</h1>
+<div class="alert alert-info">
+  <%= flash[:info] %>
+</div>
+<div>
+  <ul>
+  <% @index.each do |sentence| %>
+  <li><%= sentence.content %></li>
+  <%= link_to "Delete", sentence, method: :delete %>
+  <% end %>
+  </ul>
+</div>
+
+<%= link_to "See Some NRIpsum", root_url %>
