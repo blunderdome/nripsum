@@ -1,5 +1,9 @@
 <div>
- <%= @sentences.join(" ") %>
+  <% @sentences.in_groups(10).each do |paragraph| %>
+    <%= paragraph.join(" ") %>
+    <br>
+    <br>
+  <% end %>
 </div>
 
 <%= link_to "Add More NRIpsum", new_sentence_url %>
