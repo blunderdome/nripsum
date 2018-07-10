@@ -1,9 +1,34 @@
-<div>
-  <% @sentences.in_groups(10).each do |paragraph| %>
-    <%= paragraph.join(" ") %>
-    <br>
-    <br>
-  <% end %>
-</div>
+<header class="topbar">
+  NRIpsum
+</header>
 
-<%= link_to "Add More NRIpsum", new_sentence_url %>
+<main class="content">
+  <div class="nripsum">
+    <% @sentences.in_groups(10).each do |paragraph| %>
+      <section class="chunk">
+      <p>
+        <%= paragraph.join(" ") %>
+      </p>
+    </section>
+    <% end %>
+  </div>
+
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="nav-link">
+          <%= link_to "Add More NRIpsum", new_sentence_url %>
+        </li>
+        <li class="nav-link">
+          <%= link_to "Add More NRIpsum", new_sentence_url %>
+        </li>
+        <li class="nav-link">
+          <%= link_to "Add More NRIpsum", new_sentence_url %>
+        </li>
+        <li class="nav-link">
+          <%= link_to "Add More NRIpsum", new_sentence_url %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</main>

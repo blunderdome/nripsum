@@ -1,3 +1,50 @@
 // Place all the styles related to the Sentences controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.topbar {
+  background-image: url(https://s3-us-west-2.amazonaws.com/css-interview/lady.jpg);
+  height: 120px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 120px;
+  padding: 0px 300px;
+  text-shadow: #ccc 0 0 5px;
+  border-bottom: 1px solid #A7A4B0;
+}
+
+.content {
+  display: flex;
+}
+
+.nripsum {
+  background-color: #fff;
+  width: 80%;
+  padding: 0px 12px;
+}
+
+.chunk {
+  padding: 8px 0px;
+}
+
+.sidebar {
+  background-color: #ACADAA;
+  width: 20%;
+}
+
+.sidebar-nav {
+  padding: 20px;
+}
+
+.nav-link {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+.nav-link a:visited {
+  color: #4E4340;
+}
