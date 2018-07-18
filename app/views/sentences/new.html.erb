@@ -1,20 +1,20 @@
-<h1>
+<h1 class="section-header">
   About
 </h1>
-<div>
+<section class="ipsum-info">
   This is a collaborative Lorem Ipsum generator. Any NRI employee can use it. Please don't add any inappropriate content.
-</div>
-<div>
+</section>
+<section class="ipsum-info">
   If you'd like to remove any content, just do so. You don't need permission.
-</div>
+</section>
 
-<h1>
+<h1 class="section-header">
   Add sentences to NRIpsum
 </h1>
 <div class="alert alert-info">
   <%= flash[:info] %>
 </div>
-<div>
+<div class="ipsum-form">
   <%= form_for(@sentence) do |f| %>
 
     <%= f.label :content, "Sentence" %>
@@ -23,11 +23,11 @@
     <%= f.submit "Add" %>
   <% end %>
 </div>
-<div>
+<section class="end-punctuation-notice">
   If your sentence does not have end punctuation, some will be provided for you.
-</div>
+</section>
 
-<h1>
+<h1 class="section-header">
   NRIpsum
 </h1>
 <div class="alert alert-info">
@@ -42,4 +42,6 @@
   </ul>
 </div>
 
-<%= link_to "See Some NRIpsum", root_url %>
+<section class="ipsum-link">
+  <%= link_to "See Some NRIpsum", root_url %>
+</section>
