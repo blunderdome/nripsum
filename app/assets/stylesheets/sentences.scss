@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$color-steel: #A7A4B0;
+$color-gray: #ACACAB;
+$color-dark-brown: #1F1114;
+$color-light-brown: #5D5351;
+$color-peach: #F3C8AB;
+
 .topbar {
   background-image: url(https://s3-us-west-2.amazonaws.com/css-interview/lady.jpg);
   height: 120px;
@@ -10,7 +16,7 @@
   line-height: 120px;
   padding: 0px 300px;
   text-shadow: #ccc 0 0 5px;
-  border-bottom: 1px solid #A7A4B0;
+  border-bottom: 1px solid $color-steel;
 }
 
 .content {
@@ -28,7 +34,7 @@
 }
 
 .sidebar {
-  background-color: #ACACAB;
+  background-color: $color-gray;
   width: 20%;
 }
 
@@ -46,11 +52,11 @@
 }
 
 .nav-link a:link {
-  color: #1F1114;
+  color: $color-dark-brown;
 }
 
 .nav-link a:visited {
-  color: #1F1114;
+  color: $color-dark-brown;
 }
 
 .section-header {
@@ -81,12 +87,10 @@
 }
 
 .ipsum-form input {
-  color: #F3C8AB;
-  background-color: #1F1114;
+  color: $color-peach;
+  background-color: $color-dark-brown;
 }
 
 #sentence_content {
   background-color: white;
 }
-
-// #5D5351
