@@ -40,6 +40,7 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (10.0.2)
+    clipboard-rails (1.7.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -153,6 +154,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  clipboard-rails
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
