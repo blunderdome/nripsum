@@ -13,7 +13,11 @@ class ApplicationController < ActionController::Base
   def authenticate
     login = authenticate_or_request_with_http_basic do |username, password|
       # TODO: move password to config variable when this is hosted somewhere
-      username == "nri" && password == "lady-spin"
+      if Rails.env.development?
+        username == "nri" && password == "lady-spin"
+      else
+        username == ENV['USERNAME'] && password == ENV['PASSWORD']
+      end
     end
     session[:login] = login
   end
