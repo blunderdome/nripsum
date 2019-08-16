@@ -60,7 +60,7 @@ $color-peach: #F3C8AB;
 }
 
 .section-header {
-  font-size: 20px;
+  font-size: 24px;
   padding: 10px 10px;
 }
 
@@ -94,4 +94,19 @@ $color-peach: #F3C8AB;
 #sentence_content {
   background-color: white;
   color: black;
+}
+
+.sentence-resource {
+  padding: 10px 10px;
+}
+
+.sentence-resource a {
+  display: inline;
+  font-style: italic;
+  font-size: 10px;
+}
+
+.clipboard-btn {
+  font-weight: bold;
+  cursor: copy;
 }

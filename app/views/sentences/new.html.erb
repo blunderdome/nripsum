@@ -17,26 +17,31 @@
   If your sentence does not have end punctuation, some will be provided for you.
 </section>
 
+<hr>
+
 <h1 class="section-header">
-  NRIpsum
+  Current NRIpsum
 </h1>
 <div>
   <ul>
-  <% @index.each do |sentence| %>
-  <li><%= sentence.content %></li>
-  <%= link_to "Delete", sentence, method: :delete %>
-  <% end %>
+    <% @index.each do |sentence| %>
+    <li class="sentence-resource"><%= sentence.content %>
+    <%= link_to "Delete", sentence, method: :delete %>
+    <% end %>
+    </li>
   </ul>
 </div>
+
+<hr>
 
 <h1 class="section-header">
   About
 </h1>
 <section class="ipsum-info">
-  This is a collaborative Lorem Ipsum generator. Any NRI employee can use it. Please don't add any inappropriate content.
+  This is a collaborative Lorem Ipsum generator. If you can view this page, you're allowed to use it. Please don't add any inappropriate content.
 </section>
 <section class="ipsum-info">
-  If you'd like to remove any content, just do so. You don't need permission.
+  If you'd like to remove any content (you find it offensive, it's not funny anymore, it was never funny, etc.), just do so. You don't need permission.
 </section>
 
 <section class="ipsum-link">
