@@ -22,3 +22,21 @@ $(document).ready(function(){
   console.log(clipboard);
 
 });
+
+$(document).ready(function() {
+  $('[data-toggle-styles]').click(function(event){
+    var classes = ["bold", "normal", "italic", "bold-italic"];
+
+    // First remove existing styles; otherwise everything trends to bold italic
+    $("p").each(function(){
+      $(this).removeClass("bold italic bold-italic");
+    });
+
+    // Apply styles randomly
+    $("p").each(function(){
+      index = Math.floor(Math.random()*(classes.length));
+      $(this).addClass( classes[index] );
+    });
+    event.preventDefault()
+  });
+})

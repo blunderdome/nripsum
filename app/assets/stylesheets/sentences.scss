@@ -33,6 +33,19 @@ $color-peach: #F3C8AB;
   padding: 8px 0px;
 }
 
+.chunk p.bold {
+  font-weight: bold;
+}
+
+.chunk p.italic {
+  font-style: italic;
+}
+
+.chunk p.bold-italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .sidebar {
   background-color: $color-gray;
   width: 20%;
