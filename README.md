@@ -1,0 +1,1 @@
+Collaborative Lorem Ipsum generator.
